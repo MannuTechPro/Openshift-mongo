@@ -11,29 +11,6 @@ message: |-
    Connection URL: mongodb://${MONGODB_USER}:${MONGODB_PASSWORD}@${DATABASE_SERVICE_NAME}/${MONGODB_DATABASE}
 
   For more information about using this template, including OpenShift considerations, see documentation in the upstream repository: https://github.com/sclorg/mongodb-container.
-metadata:
-  annotations:
-    description: |-
-      MongoDB database service, with persistent storage. For more information about using this template, including OpenShift considerations, see documentation in the upstream repository: https://github.com/sclorg/mongodb-container.
-
-      NOTE: Scaling to more than one replica is not supported. You must have persistent volumes available in your cluster to use this template.
-    iconClass: icon-mongodb
-    openshift.io/display-name: MongoDB
-    openshift.io/documentation-url: https://docs.okd.io/latest/using_images/db_images/mongodb.html
-    openshift.io/long-description: This template provides a standalone MongoDB server
-      with a database created.  The database is stored on persistent storage.  The
-      database name, username, and password are chosen via parameters when provisioning
-      this service.
-    openshift.io/support-url: https://access.redhat.com
-    samples.operator.openshift.io/version: 4.5.16
-    tags: database,mongodb
-  creationTimestamp: "2021-08-19T00:17:48Z"
-  labels:
-    samples.operator.openshift.io/managed: "true"
-  name: mongodb-persistent-ocs
-  namespace: openshift
-  resourceVersion: "155942205"
-  uid: a08945b0-d3b6-46da-96d7-d29a20585ffb
 objects:
 - apiVersion: v1
   kind: Secret
